@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rudra Pratap Singh Nathawat — Software Developer</title>
+  <meta name="description" content="Rudra Pratap Singh Nathawat — B.Tech CSE student at JECRC University, building real-world software solutions." />
+  <meta name="theme-color" content="#0F0F10" />
+  <meta name="color-scheme" co
+ntent="dark light" />
+  <!-- Set theme + "js" flag before first paint: no theme flash, and content is only
+       hidden for reveal animations when JavaScript is actually running. -->
+  <script>
+    (function () {
+      var d = document.documentElement, t = null;
+      d.classList.add('js');
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (!t) t = window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      d.setAttribute('data-theme', t);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════ NAV ═══════════ -->
+  <header class="nav" id="nav" role="banner">
+    <a href="#hero" class="nav__logo" aria-label="Home">RPSN<span class="accent">.</span></a>
+    <nav class="nav__links" aria-label="Primary navigation">
+      <a href="#about"      class="nav__link">About</a>
+      <a href="#skills"     class="nav__link">Skills</a>
+      <a href="#work"       class="nav__link">Projects</a>
+      <a href="#education"  class="nav__link">Education</a>
+      <a href="#contact"    class="nav__link">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark/light mode">
+        <span class="theme-toggle__icon theme-toggle__icon--dark" aria-hidden="true">🌙</span>
+        <span class="theme-toggle__icon theme-toggle__icon--light" aria-hidden="true">☀️</span>
+      </button>
+      <button class="nav__menu-btn" id="menuBtn" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <a href="#about"      class="mobile-nav__link">About</a>
+    <a href="#skills"     class="mobile-nav__link">Skills</a>
+    <a href="#work"       class="mobile-nav__link">Projects</a>
+    <a href="#education"  class="mobile-nav__link">Education</a>
+    <a href="#contact"    class="mobile-nav__link">Contact</a>
+  </div>
+
+  <main>
+
+    <!-- ═══════════ HERO ═══════════ -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__glow" id="heroGlow" aria-hidden="true"></div>
+      <div class="hero__shape hero__shape--1" aria-hidden="true"></div>
+      <div class="hero__shape hero__shape--2" aria-hidden="true"></div>
+      <div class="hero__shape hero__shape--3" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__tag reveal">Software Developer · Jaipur, India</p>
+
+        <h1 class="hero__headline reveal">
+          I build software<br/>
+          that <span class="hero__typed" id="typedText"></span><span class="hero__cursor" aria-hidden="true">|</span>
+        </h1>
+
+        <p class="hero__sub reveal">
+          Hey, I'm <strong>Rudra Pratap Singh Nathawat</strong> &mdash; a B.Tech CSE student
+          at JECRC University crafting real-world solutions with code.
+          From AI-powered repair platforms to innovative vending concepts,
+          I turn ideas into working products.
+        </p>
+
+        <div class="hero__ctas reveal">
+          <a href="#work" class="btn btn--primary">Explore My Projects</a>
+          <a href="#contact" class="btn btn--ghost">Contact Me</a>
+        </div>
+
+        <div class="hero__scroll" aria-hidden="true">
+          <span class="hero__scroll-line"></span>
+          <span class="hero__scroll-label">Scroll</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ ABOUT ═══════════ -->
+    <section class="section about" id="about" aria-label="About Me">
+      <div class="container about__inner">
+
+        <!-- Photo -->
+        <div class="about__photo-wrap reveal">
+          <div class="about__photo" role="img" aria-label="Photo of Rudra Pratap Singh Nathawat">
+            <img src="photo.png" alt="Rudra Pratap Singh Nathawat" />
+          </div>
+          <div class="about__photo-border" aria-hidden="true"></div>
+        </div>
+
+        <!-- Text -->
+        <div class="about__text">
+          <div class="section__header reveal">
+            <span class="section__label">01 / About Me</span>
+            <h2 class="section__title">Code. Build. Solve.</h2>
+          </div>
+
+          <p class="about__bio reveal">
+            I'm a motivated B.Tech Computer Science student passionate about
+            software development and emerging technologies. I believe the best
+            software is built to solve real problems — not just to look good on paper.
+          </p>
+          <p class="about__bio reveal">
+            My work spans full-stack web development, AI-integrated applications,
+            and startup-style innovation projects. I learn fast, ship regularly,
+            and care deeply about writing clean, practical code.
+          </p>
+
+          <div class="about__highlights reveal">
+            <div class="highlight-pill">
+              <span class="highlight-pill__icon">🎓</span>
+              <span>JECRC University — B.Tech CSE (2025–2029)</span>
+            </div>
+            <div class="highlight-pill">
+              <span class="highlight-pill__icon">📍</span>
+              <span>Jaipur, Rajasthan, India</span>
+            </div>
+            <div class="highlight-pill">
+              <span class="highlight-pill__icon">🏅</span>
+              <span>Scholarship recipient — both academic years</span>
+            </div>
+            <div class="highlight-pill">
+              <span class="highlight-pill__icon">🎖️</span>
+              <span>NCC 'A' Certificate holder</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════ SKILLS ═══════════ -->
+    <section class="section skills" id="skills" aria-label="Technical Skills">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">02 / Technical Skills</span>
+          <h2 class="section__title">What I work with</h2>
+        </div>
+
+        <div class="skills__grid">
+
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">
+              <span class="skill-category__icon" aria-hidden="true">⌨️</span>
+              Languages
+            </h3>
+            <div class="skill-category__tags">
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">
+              <span class="skill-category__icon" aria-hidden="true">🖥️</span>
+              Frontend
+            </h3>
+            <div class="skill-category__tags">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Responsive Design</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">
+              <span class="skill-category__icon" aria-hidden="true">⚙️</span>
+              Backend
+            </h3>
+            <div class="skill-category__tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Python</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">
+              <span class="skill-category__icon" aria-hidden="true">🛠️</span>
+              Tools
+            </h3>
+            <div class="skill-category__tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">VS Code</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">
+              <span class="skill-category__icon" aria-hidden="true">🤖</span>
+              AI & Emerging Tech
+            </h3>
+            <div class="skill-category__tags">
+              <span class="skill-tag">OpenAI API</span>
+              <span class="skill-tag">Google Gemini</span>
+              <span class="skill-tag">AI-assisted Dev</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ PROJECTS ═══════════ -->
+    <section class="section work" id="work" aria-label="Featured Projects">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">03 / Featured Projects</span>
+          <h2 class="section__title">Things I've built</h2>
+        </div>
+
+        <div class="projects__list">
+
+          <!-- Project 1: RepairConnect -->
+          <article class="project-featured reveal" aria-label="RepairConnect Project">
+            <div class="project-featured__visual">
+              <div class="project-featured__img project-featured__img--repair">
+                <!-- Screenshot: drop repairconnect-screenshot.jpg here -->
+                <div class="project-featured__placeholder">
+                  <svg width="80" height="80" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+                    <circle cx="40" cy="40" r="30" stroke="var(--accent)" stroke-width="2" fill="none"/>
+                    <path d="M28 40 L36 48 L52 32" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span class="project-featured__label">RepairConnect</span>
+                </div>
+              </div>
+              <div class="project-featured__badge">Live ↗</div>
+            </div>
+
+            <div class="project-featured__body">
+              <div class="project-featured__meta">
+                <span class="project-featured__number">01</span>
+                <span class="project-featured__type">Web App · AI-Powered</span>
+              </div>
+              <h3 class="project-featured__title">RepairConnect</h3>
+              <p class="project-featured__tagline">Diagnose, Repair &amp; Reuse</p>
+              <p class="project-featured__desc">
+                A platform that helps users identify problems with damaged electronics,
+                appliances, bicycles, furniture and more. It uses AI to understand
+                possible causes, suggest troubleshooting steps, estimate repair costs,
+                and connect users with nearby repair professionals.
+              </p>
+              <ul class="project-featured__features" aria-label="Key features">
+                <li>AI-powered damage diagnosis</li>
+                <li>Image &amp; video-based problem identification</li>
+                <li>Repair cost estimation engine</li>
+                <li>Nearby repair professional discovery</li>
+                <li>Repair &amp; reuse recommendations</li>
+              </ul>
+              <div class="project-featured__tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">AI Integration</span>
+                <span class="tag">HTML/CSS</span>
+              </div>
+              <div class="project-featured__links">
+                <a href="https://repairconnect.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn--primary">View Live Site ↗</a>
+                <a href="https://github.com/rudrabfffff-creator" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">GitHub →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: AromaGo -->
+          <article class="project-featured project-featured--reverse reveal" aria-label="AromaGo Project">
+            <div class="project-featured__visual">
+              <div class="project-featured__img project-featured__img--aroma">
+                <div class="project-featured__placeholder">
+                  <svg width="80" height="80" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+                    <rect x="20" y="10" width="40" height="60" rx="8" stroke="var(--accent)" stroke-width="2" fill="none"/>
+                    <rect x="30" y="22" width="20" height="12" rx="3" stroke="var(--accent)" stroke-width="1.5" fill="none"/>
+                    <circle cx="40" cy="52" r="6" stroke="var(--accent)" stroke-width="1.5" fill="none"/>
+                    <line x1="40" y1="10" x2="40" y2="6" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M36 6 Q40 2 44 6" stroke="var(--accent)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                  </svg>
+                  <span class="project-featured__label">AromaGo</span>
+                </div>
+              </div>
+              <div class="project-featured__badge project-featured__badge--startup">Startup</div>
+            </div>
+
+            <div class="project-featured__body">
+              <div class="project-featured__meta">
+                <span class="project-featured__number">02</span>
+                <span class="project-featured__type">Innovation · Startup Concept</span>
+              </div>
+              <h3 class="project-featured__title">AromaGo</h3>
+              <p class="project-featured__tagline">Cartridge-Based Perfume Vending Machine</p>
+              <p class="project-featured__desc">
+                An innovative perfume vending concept designed to provide affordable
+                and convenient fragrance solutions through an automated dispensing machine.
+                Customers can access premium perfume for just ₹10, making fragrance
+                more accessible and convenient for everyone.
+              </p>
+              <ul class="project-featured__features" aria-label="Key features">
+                <li>Automated perfume dispensing system</li>
+                <li>Cartridge-based modular fragrance</li>
+                <li>₹10 per dispensing — ultra-affordable model</li>
+                <li>Business-oriented vending solution</li>
+                <li>Scalable deployment concept</li>
+              </ul>
+              <div class="project-featured__tags">
+                <span class="tag">Innovation</span>
+                <span class="tag">Hardware Concept</span>
+                <span class="tag">Startup</span>
+                <span class="tag">Product Design</span>
+              </div>
+              <div class="project-featured__links">
+                <a href="#contact" class="btn btn--primary">Discuss This Project</a>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /projects__list -->
+
+        <!-- DevCrest Buildathon callout -->
+        <div class="buildathon-callout reveal">
+          <div class="buildathon-callout__icon" aria-hidden="true">🏆</div>
+          <div>
+            <strong>DevCrest Buildathon</strong>
+            <p>Participated through RepairConnect — building under real hackathon conditions.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════ EDUCATION ═══════════ -->
+    <section class="section education" id="education" aria-label="Education">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">04 / Education &amp; Achievements</span>
+          <h2 class="section__title">Where I'm growing</h2>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-card__left">
+            <div class="edu-card__badge">B.Tech</div>
+            <div class="edu-card__year">2025 — 2029</div>
+          </div>
+          <div class="edu-card__right">
+            <h3 class="edu-card__uni">JECRC University</h3>
+            <p class="edu-card__degree">Bachelor of Technology — Computer Science &amp; Engineering</p>
+            <p class="edu-card__status">Currently in 2nd Year · Expected Graduation: 2029</p>
+            <div class="edu-card__achievements">
+              <div class="achievement-item">
+                <span class="achievement-item__icon" aria-hidden="true">🏅</span>
+                <span>Academic Scholarship — Year 1 &amp; Year 2</span>
+              </div>
+              <div class="achievement-item">
+                <span class="achievement-item__icon" aria-hidden="true">🎖️</span>
+                <span>NCC 'A' Certificate</span>
+              </div>
+              <div class="achievement-item">
+                <span class="achievement-item__icon" aria-hidden="true">🏆</span>
+                <span>DevCrest Buildathon Participant</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Professional Goal -->
+        <div class="goal-box reveal">
+          <div class="goal-box__label">My Goal</div>
+          <p class="goal-box__text">
+            To become a skilled Software Engineer and secure a software development
+            position at a reputed MNC — contributing to real-world applications while
+            continuously sharpening my technical and professional abilities.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════ CONTACT ═══════════ -->
+    <section class="section contact" id="contact" aria-label="Contact">
+      <div class="container contact__inner">
+        <div class="section__header reveal">
+          <span class="section__label">05 / Contact</span>
+          <h2 class="section__title">Let's connect &amp;<br/><span class="accent-text">build together</span></h2>
+          <p class="contact__sub reveal">
+            Open to internships, collaborations, and new opportunities.
+            Drop a message and I'll get back to you!
+          </p>
+        </div>
+
+        <div class="contact__layout">
+
+          <!-- Form -->
+          <form class="contact__form reveal" novalidate id="contactForm" aria-label="Contact form">
+            <div class="form__group">
+              <label class="form__label" for="name">Name</label>
+              <input class="form__input" type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="email">Email</label>
+              <input class="form__input" type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="message">Message</label>
+              <textarea class="form__input form__textarea" id="message" name="message" placeholder="Tell me about the opportunity or project..." required rows="5"></textarea>
+            </div>
+            <button class="btn btn--primary btn--full" type="submit">Send Message →</button>
+            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <!-- Info -->
+          <div class="contact__info reveal">
+            <div class="contact__links">
+              <a href="mailto:rudrapratapsinghnathawat9@gmail.com" class="contact__link" aria-label="Send email to Rudra">
+                <span class="contact__link-icon" aria-hidden="true">✉</span>
+                <div>
+                  <strong>Email</strong>
+                  <span>rudrapratapsinghnathawat9@gmail.com</span>
+                </div>
+              </a>
+              <a href="tel:+916376498281" class="contact__link" aria-label="Call Rudra">
+                <span class="contact__link-icon" aria-hidden="true">📞</span>
+                <div>
+                  <strong>Phone</strong>
+                  <span>+91 6376498281</span>
+                </div>
+              </a>
+              <a href="https://github.com/rudrabfffff-creator" class="contact__link" target="_blank" rel="noopener noreferrer" aria-label="Rudra's GitHub">
+                <span class="contact__link-icon" aria-hidden="true">⌥</span>
+                <div>
+                  <strong>GitHub</strong>
+                  <span>rudrabfffff-creator</span>
+                </div>
+              </a>
+              <a href="#" class="contact__link contact__link--pending" aria-label="LinkedIn — coming soon">
+                <span class="contact__link-icon" aria-hidden="true">in</span>
+                <div>
+                  <strong>LinkedIn</strong>
+                  <span>Coming soon</span>
+                </div>
+              </a>
+            </div>
+
+            <a href="#" class="btn btn--ghost contact__resume" aria-label="Download Resume PDF">
+              ↓ Download Resume
+            </a>
+            <!-- Replace href="#" above with href="resume.pdf" once your PDF is ready -->
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <span class="footer__copy">© 2026 Rudra Pratap Singh Nathawat · Jaipur, India</span>
+      <div class="footer__socials">
+        <a href="https://github.com/rudrabfffff-creator" class="footer__social" target="_blank" rel="noopener noreferrer" aria-label="GitHub">gh</a>
+        <a href="mailto:rudrapratapsinghnathawat9@gmail.com" class="footer__social" aria-label="Email">✉</a>
+      </div>
+      <a href="#hero" class="footer__top" aria-label="Back to top">↑ Top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
